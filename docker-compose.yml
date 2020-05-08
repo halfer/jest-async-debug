@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  api:
+    build: .
+    depends_on:
+      - mysql
+    stdin_open: true
+    tty: true
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: contributor
+      MYSQL_ROOT_PASSWORD: p@ssw0rd
+    volumes:
+      - dbdata:/var/lib/mysql
+
+# Container volumes
+volumes:
+  dbdata:

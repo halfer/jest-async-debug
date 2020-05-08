@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "p@ssw0rd",
+    "database": "contributor",
+    "host": "mysql",
+    "dialect": "mysql",
+    "migrationStorageTableName": "sequelize_meta"
+  },
+  "test": {
+    "username": "root",
+    "password": "p@ssw0rd",
+    "database": "contributor_test",
+    "host": "mysql",
+    "dialect": "mysql",
+    "migrationStorageTableName": "sequelize_meta"
+  },
+  "production": {
+    "username": "root",
+    "password": "FIXME",
+    "database": "contributor",
+    "host": "mysql",
+    "dialect": "mysql",
+    "migrationStorageTableName": "sequelize_meta"
+  }
+}
