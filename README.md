@@ -11,7 +11,7 @@ Then to run it:
 
 Get a shell on the frontend:
 
-    docker exec -it `docker ps --filter "name=_frontend_" --filter "status=running" --format "{{.ID}}"` bash
+    docker exec -it api-debug_api_1 bash
 
 Create a MySQL database:
 
